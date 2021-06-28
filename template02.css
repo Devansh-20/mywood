@@ -1,0 +1,471 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  /* fixed bar */
+  .fixed {
+    height: 10vh;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400 !important;
+    height: 80px;
+    line-height: 1;
+    padding: 0;
+    z-index: 99998;
+    text-align: center !important;
+    position: fixed;
+    inset: 0;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #fixed-para {
+    color: gray;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 50px;
+  }
+  #fixed-btn {
+    text-decoration: none;
+    background: #2ea2cc;
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-align: left;
+    color: white;
+    display: inline-block;
+  }
+  /* header section */
+  #header {
+    height: 30vh;
+    display: flex;
+    padding: 180px 0 120px 0;
+    flex-direction: column;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    justify-content: center;
+  }
+  #header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  #header h2:hover {
+    color: #897248;
+  }
+  #header p {
+    margin: 15px;
+  }
+  #ul {
+    display: flex;
+    margin: 5px 10px;
+  }
+  .items {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0px 10px;
+  }
+  #parent_icon {
+    display: flex;
+    justify-content: center;
+  }
+  .icons {
+    margin: 0 10px;
+  }
+  .icons:hover,
+  .items:hover {
+    color: #897248;
+  }
+  
+  /* welcome section */
+  #welcome {
+    height: 100vh;
+    background: linear-gradient(from right green, pink);
+    position: relative;
+    color: white;
+  }
+  #welcome::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url("../mywood/louis-hansel-nkmc3kluihu-unsplash-1.jpg") no-repeat center/cover;
+    filter: brightness(70%);
+  }
+  #welcome > div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin: 0 220px;
+  }
+  #main-heading {
+    color: white;
+    margin: 180px 0 0 0;
+    font-size: 3.7rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 65px;
+    font-weight: normal;
+  }
+  #welcome-para {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 30px;
+    margin: 50px 0 0 0;
+    width: 475px;
+  }
+  #welcome-button {
+    margin: 10px 0 0 0;
+    width: 115px;
+    text-align: center;
+    border: none;
+    background: brown;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* about */
+  #about {
+    background-color: white;
+    height: 100vh;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  #about-div {
+    display: flex;
+    width: 55%;
+    margin: auto;
+    height: 100%;
+  }
+  #img1{
+      margin: -7px 5px;
+  }
+  .img {
+    width: 84%;
+  }
+  #about-writings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color:black;
+    justify-content: center;
+  }
+  #about-title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  #second-heading {
+    margin: 10px 0;
+    line-height: 39px;
+    font-size: 1.728rem;
+    letter-spacing: normal;
+    line-height: 1.125;
+    font-weight: bold !important;
+    width: 278px;
+  }
+  #para {
+    margin: 10px 0;
+    line-height: 26px;
+    font-size: 17px;
+  }
+  #foodie1 {
+    margin: 300px 0 0 0;
+  }
+  #foodie2 {
+    margin: 100px 0 0 0;
+  }
+  /*discover section  */
+  #discover {
+    height: 72vh;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  #discover::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://maywooddemo.files.wordpress.com/2019/08/louis-hansel-in24hltoqyi-unsplash.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(70%);
+  }
+  #discover-heading {
+    font-size: 49.7664px;
+    font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  }
+  #discover-para {
+    line-height: 25px;
+    margin: 40px 0;
+    font-family: "Open Sans", sans-serif;
+  
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    width: 750px;
+  }
+  #discover > a {
+    text-align: center;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 16.666px;
+  }
+  /* menu section */
+  #menu {
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  #menu > h2 {
+    font-size: 28.8px;
+    margin: 35px 0 0 0;
+  
+  }
+  #menu-div {
+    display: flex;
+    width: 50%;
+    margin: 0 0 60px 0;
+  }
+  #menu-div div h3 {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+  #menu-div div h4 {
+    font-size: 1.3rem;
+  }
+  #menu-div div p {
+    font-weight: 300px;
+    line-height: 30px;
+    font-size: 20px;
+    font-style: italic;
+  }
+  #menu-div div span {
+    font-weight: 300px;
+    font-size: 20px;
+  }
+  #menu a{
+    padding:12px 15px;
+    font-weight: 700;
+    font-size: 16.66px;
+  }
+  /* booking section */
+  #booking {
+    height: 90vh;
+    color: white;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: "IBM Plex Sans", sans-serif; */
+  }
+  #booking::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+    z-index: -1;
+    background: url("../mywood/table.jpg") no-repeat scroll center/cover;
+    opacity: 1.7;
+  }
+  #booking-heading {
+    margin: 0 0 15px 0;
+    font-size: 50px;
+    font-weight: normal;
+  }
+  #booking-heading + p{
+      color: white;
+    font-size: 20px;
+  }
+  /* contact section */
+  #contact {
+    /* background-color: orange; */
+    border: 3px solid black;
+    padding: 40px 0;
+  }
+  form {
+    
+    width: 29%;
+    margin: auto;
+  }
+
+  form > div {
+    margin: 30px 0;
+  }
+  label {
+    font-family: "IBM Plex Sans", sans-serif;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* font-family: "Baloo 2", cursive; */
+  }
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  textarea {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.774);
+    width: 625px;
+  }
+  select {
+    font-size: 20px;
+    width: 140px;
+    padding: 15px 0;
+    background: white;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+  button {
+    padding: 15px 20px !important;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px !important;
+  }
+  /* footer */
+  #footer {
+    height: 85vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  #footer::before {
+    content: "";
+    background: url(../mywood/img12.jpg) no-repeat scroll center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(20%);
+    position: absolute;
+  }
+  #footer h2 {
+    font-size: 28.8px;
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+  }
+  #footer > p {
+    font-size: 20px;
+    width: 701px;
+    position: relative;
+    top: 51px;
+  
+    text-align: center;
+  }
+  .sadhu {
+      display: inline-block;
+    margin-top: 20px;
+    color: #897248;
+    font-size: 20px;
+  }
+  .sadhu:hover {
+    color: #685636;
+    text-decoration: none;
+  }
+  #links {
+    top: 45px;
+    position: relative;
+  }
+  #footer_div {
+    display: flex;
+    margin: 75px 20px 83px 0;
+  }
+  #footer_div > div {
+    width: 33%;
+    margin: 0 65px;
+  }
+  #footer_div > div > h3 {
+    font-size: 28.8px;
+    margin-bottom: 32px;
+    font-weight: 300;
+  }
+  #footer_div > div > p {
+    font-size: 20px;
+  }
+
+  /* wp end */
+  #wp-foot {
+    height: 18vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 11vh;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    color: #767070;
+    font-size: 16.66px;
+  }
+  
+  #wp-foot li {
+    list-style-type: none;
+    float: left;
+    margin: 7px;
+  }
+  .hover:hover {
+    color: #685636;
+  }
+  #wp-foot span {
+    font-weight: normal;
+  }
+  
+  /* utility */
+  .para {
+    color: rgb(39, 39, 39);
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 25px;
+  }
+  .w33 {
+    width: 33%;
+  }
+  .req::after {
+    content: " (required)";
+    color: rgb(63, 60, 60);
+    font-size: 1rem;
+  }
+  .btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #897248;
+    padding: 12px 5px;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: capitalize;
+  }
+  .btn:hover {
+    background-color: #6b5a39;
+  }
+  .bold {
+    font-weight: bold !important;
+  }
